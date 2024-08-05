@@ -30,6 +30,7 @@
         aiChatOptions: { // 自定义取值参考：https://docs.nlkit.com/nlux/reference/ui/ai-chat#conversation-options
           conversationOptions: { // 自定义取值参考：https://docs.nlkit.com/nlux/reference/ui/ai-chat#conversation-options
             conversationStarters: [
+              {prompt: '杨涛是谁？' },
               {prompt: '哪款手机续航最长？'},
               {prompt: '你们有哪些手机型号？'},
               {prompt: '有折叠屏手机吗?'},
@@ -73,6 +74,8 @@
         z-index: 100;
         bottom: 10px;
         right: 10px;
+        width: 100%;
+        max-width: 400px;
       }
       /* webchat 的唤起按钮如果被遮挡，可以尝试通过 z-index、bottom、right 等设置 来调整。也可以通过 CSS 进一步定制唤起按钮的形状、大小等。 */
       .webchat-bubble-tip {
@@ -81,6 +84,6 @@
         right: 20px;
       }
     </style>
-
+    <div id="app">我是index页面，点击右下角的icon开始聊天</div>
   </body>
 </html>
